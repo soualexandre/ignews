@@ -4,6 +4,7 @@ import {FiX} from 'react-icons/fi';
 import {signIn, useSession} from 'next-auth/client'
 export function SignInButton(){
     const [session] = useSession();
+    console.log(session)
     return session ? (
         <button
         type="button"
