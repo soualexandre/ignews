@@ -12,6 +12,7 @@ export default NextAuth({
     }),
   ],
 
+
   callbacks: {
     async signIn(user, acount, profile) {
       const { email } = user
