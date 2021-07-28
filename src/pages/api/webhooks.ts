@@ -20,9 +20,8 @@ export const config ={
     }
 }
 
-const relevatsEvents = new Set([
-    'checkout.session.completed'
-])
+
+const relevantEvents = new Set(["checkout.session.completed"]);
 
 export default async ( req: NextApiRequest, res: NextApiResponse)=>{
   
@@ -36,9 +35,10 @@ export default async ( req: NextApiRequest, res: NextApiResponse)=>{
         return res.status(400).send(`Webhook-error: ${err.message} `)
     }
 
-    const type = event.type;
+    const {type} = event;
+    console.log(event)
 
-    if(relevatsEvents.has(type)){
+    if(relevantEvents.has(type)){
         try{
         switch (type) {
             case 'checkout.session.completed':
