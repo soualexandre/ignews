@@ -26,8 +26,8 @@ export default function Posts({ posts }: PostsProps) {
                 <div className={styles.posts}>
                     {posts.map(post => (
                         <a key={post.slug} href="#">
-                            <time>{post.upadtedAt}</time>
-                            <strong>{post.title}</strong>
+                            <time>{post.upadtedAt</time>
+                            <strong>{post.title</strong>
                             <p>{post.excerpt}</p>
                         </a>
                     ))}

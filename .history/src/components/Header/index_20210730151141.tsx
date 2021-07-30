@@ -14,7 +14,7 @@ export function Header() {
                         <a className={asPath === '/' ? styles.active : ''}>Home</a>
                     </Link>
                     <Link href="/posts" prefetch>
-                        <a className={asPath === '/posts' ? styles.active : ''}>Posts</a>
+                        <a className={asPath === '/' ? styles.active : ''}>Posts</a>
                     </Link>
                 </nav>
                 <SignInButton />

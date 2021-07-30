@@ -11,10 +11,10 @@ export function Header() {
                 <img src="/images/logo.svg" alt="ig.news" />
                 <nav>
                     <Link href="/" >
-                        <a className={asPath === '/' ? styles.active : ''}>Home</a>
+                        <a className={styles.active}>Home</a>
                     </Link>
                     <Link href="/posts" prefetch>
-                        <a className={asPath === '/posts' ? styles.active : ''}>Posts</a>
+                        <a>Posts</a>
                     </Link>
                 </nav>
                 <SignInButton />
