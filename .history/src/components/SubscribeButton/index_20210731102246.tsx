@@ -15,7 +15,7 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
 
     async function handleSubscribe() {
         
-        if (session.activeSubscription) {
+        if (!session.activeSubscription) {
             router.push('/posts')
             return;
         }
